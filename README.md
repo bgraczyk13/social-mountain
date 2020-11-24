@@ -249,7 +249,7 @@ render() {
   const { text, date } = this.props;
 
   return (
-    <section className="Post__parent" onClick={ this.hideMasterMenu }>
+    <section className="Post__parent" onClick={ this.hideMasterMenu } >
 
       <div className="Post__master-controls">
         <MasterControlIcon onClick={ this.toggleMasterMenu } />
@@ -415,7 +415,7 @@ class App extends Component {
           {
             posts.map( post => (
               <Post key={ post.id }
-                    text={ post.text}
+                    text={ post.text }
                     date={ post.date }
                     id={ post.id }
                     updatePostFn={ this.updatePost } />
